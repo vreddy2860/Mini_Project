@@ -1,0 +1,119 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="ISO-8859-1"> 
+<title>Blood Donation</title> 
+<link rel='stylesheet' href='Donor_registration_page.css'> 
+</head> 
+<body> 
+ <div class ="split-screen"> 
+  <div class="left-screen"> 
+   <section class="copy"> 
+    <h1>Donate Blood</h1> 
+    <h1>Save lives</h1> 
+   </section> 
+  </div> 
+  <div class="right-screen"> 
+   <form> 
+    <section class="copy"> 
+     <h2>Sign Up</h2> 
+     <div class="login-form"> 
+      <p>Already have an account? <a href="#"><strong>Log 
+In</strong></a></p> 
+     </div> 
+    </section> 
+    <div class="container"> 
+     <div class="container-left"> 
+      <div class="input-container name"> 
+       <label for="Name"><b>Name</b></label> 
+          <input type="text" placeholder="Enter Name" name="Name" 
+id="Name" required> 
+      </div> 
+      <div class="input-container email"> 
+       <label for="email"><b>Email</b></label> 
+          <input type="email" placeholder="Enter Email" name="email" 
+id="email" required> 
+      </div> 
+      <div class="input-container Phone Number"> 
+       <label for="Phoneno."><b>Phone Number</b></label> 
+          <input type="tel" placeholder="Enter Phone Number" 
+name="Phoneno." id="Phoneno." required> 
+      </div> 
+      <div class="input-container Address"> 
+       <label for="Address"><b>Address</b></label> 
+          <input type="text" placeholder="Enter Address" name="Address" 
+id="Address" required> 
+      </div> 
+      <div class="input-container Pincode"> 
+       <label for="Pincode"><b>Pincode</b></label> 
+          <input type="text" placeholder="Enter Pincode" name="Pincode" 
+16  
+id="Pincode" required> 
+      </div> 
+     </div> 
+     <div class="container-right"> 
+      <div class="input-container DOB"> 
+       <label for="DOB"><b>DOB</b></label> 
+          <input type="date" placeholder="Enter DOB" name="DOB" 
+id="DOB"  
+          required> 
+      </div> 
+      <div class="input-container-Gender"> 
+       <lable style="display: flex ;font-size: 17px;margin-bottom: 
+0.5rem;margin-top:0.5rem"><b>Gender</b></lable> 
+ 
+          <input type="radio" name="Gender" id="male"> 
+          <label for="male" style="float: left">Male</label> 
+           
+          <input type="radio" name="Gender" id="female"> 
+          <label for="female" style="float: left">Female</label> 
+           
+          <input type="radio" name="Gender" id="Others"> 
+          <label for="others" style="float: left;padding-bottom: 
+2px">Others</label> 
+         
+      </div> 
+      <div class="input-container-blood"> 
+       <label for="Blood-Group"><b>Blood Group</b></label> 
+       <input type="text" placeholder="Enter Blood Group" 
+list="Blood-Group" name="Blood-Group" required> 
+ 
+          <datalist id="Blood-Group"> 
+           <option value="A+"> 
+           <option value="A-"> 
+           <option value="B+"> 
+           <option value="B-"> 
+           <option value="AB+"> 
+           <option value="AB-"> 
+           <option value="O+"> 
+           <option value="O-"> 
+           <option value="Bombay Blood Group"> 
+          </datalist> 
+ 
+      </div> 
+      <div class="input-container Password"> 
+       <label for="password"><b>Password</b></label> 
+          <input type="password" placeholder="Enter password" 
+name="password" id="password" required> 
+          <i class=" for fa-eye-slash"></i> 
+      </div> 
+      <div class="input-container Confirm"> 
+       <label for="conform"><b>Confirm Password</b></label> 
+          <input type="password" placeholder="Confirm password" 
+name="confirm password" id="confirm password" required> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="input-container-health"> 
+     <lable class="checkbox-container"> 
+      <input type="checkbox"> 
+      Yes, I have no health issues. 
+     </lable> 
+    </div> 
+    <button class="Sign-up-button" 
+    type="submit">Sign Up</button> 
+   </form> 
+  </div> 
+ </div> 
+</body> 
+</html> 

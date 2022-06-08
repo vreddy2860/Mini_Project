@@ -1,0 +1,186 @@
+root{ 
+    font-size: 100%; 
+    font-size: 16px; 
+    line-height: 1.5; 
+    --primary-blue : #233975; 
+   } 
+   body{ 
+    margin-top:50px; 
+    margin-left: 40px; 
+    margin-right: 40px; 
+    margin-bottom: 50px; 
+    
+    
+    font-family: 'Montserrat'; 
+    font-weight: 500; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    
+    background-image: linear-gradient(rgb(255, 153, 153),rgb(255, 77, 77)); 
+     
+   } 
+   .split-screen{  
+    max-height:620px; 
+    height: 100%; 
+    width: 100%; 
+    
+    /*text align */ 
+    display: flex; 
+    flex-direction: column; 
+    background :white; 
+   } 
+   h1{ 
+    font-size: 2.25rem; 
+    font-weight: 700; 
+   } 
+   a{ 
+    text-decoration: none; 
+    color: var(--primary-blue); 
+   } 
+   a:hover{ 
+    text-decoration:underline; 
+   } 
+   .left-screen, .right-screen{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+   } 
+   .left-screen{ 
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)),url('../images/registration-img.jpg'); 
+    background-size: cover; 
+    max-width: 600px; 
+   } 
+   .left-screen .copy{ 
+    color: white; 
+    text-align: center; 
+   } 
+   .right-screen .copy{ 
+    color: black; 
+    text-align: center; 
+   } 
+   .right-screen .copy h2{ 
+    text-align: center; 
+    margin-left: 70px; 
+   } 
+   .right-screen .copy p{ 
+    text-align: center; 
+    margin: 1.5em 0; 
+    margin-top:0px; 
+    margin-left: 70px; 
+    font-size: 0.9rem; 
+   } 
+   .right-screen .copy p a:hover{ 
+    font-size:1.0rem; 
+    color: rgb(213,31,103); 
+   } 
+   .right-screen form{ 
+    width:680px; 
+   } 
+   form input[type="text"], 
+   form input[type="email"], 
+   form input[type="password"], 
+   form input[type="tel"] 
+   { 
+    display: block; 
+    width: 100%; 
+    max-width: 280px; 
+    box-sizing: border-box; 
+    border-radius: 4px; 
+    border:1px solid #c4c4c4; 
+    padding: 1em; 
+    margin-bottom:0.25rem; 
+    font-size: 0.675rem; 
+   } 
+   form input[type="date"]{ 
+    display: block; 
+    width:100%; 
+    box-sizing: border-box; 
+    border-radius: 4px; 
+    border:1px solid #c4c4c4; 
+    padding: 0.8em; 
+    margin-bottom:0.25rem; 
+    font-size: 0.675rem; 
+   } 
+   label{ 
+    display: block; 
+    margin-bottom: 0.5rem; 
+    font-size: 1rem; 
+   } 
+   form input[type="radio"]{ 
+    float: left; 
+    width:20px; 
+    margin-right: 10px; 
+   } 
+    
+   .container{ 
+    height: 100%; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+   } 
+   .container-left, .container-right{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+   } 
+   .container-right{ 
+    margin-left:50px; 
+     
+   } 
+   .container-left{ 
+    margin-left: 50px; 
+    margin-right:50px; 
+   } 
+   .input-container-health{ 
+    margin-top:30px; 
+    margin-left:50px;  
+    margin-bottom: 20px; 
+   } 
+   .Sign-up-button{ 
+    display: block; 
+    width: 25%; 
+    background: white; 
+    color: rgb(255, 77, 77); 
+    font-weight: 700; 
+    border:solid; 
+    border-width: 2px; 
+    border-color: rgb(255, 77, 77); 
+    padding:0.9rem; 
+    border-radius: 2rem; 
+    font-size: 0.95rem; 
+    text-transform: uppercase; 
+    letter-spacing: 0.2px; 
+    
+    max-height: 50px; 
+    
+    margin-left:50px; 
+    margin-top:10px; 
+   } 
+   .Sign-up-button:hover{ 
+    background: linear-gradient(rgb(247,57,99),rgb(213,31,103)); 
+    color:white; 
+    cursor:pointer; 
+   } 
+    
+    
+   @media screen and (min-width: 600px){ 
+    .split-screen{ 
+     flex-direction: row; 
+     height: 100vh; 
+    } 
+    .left-screen,.right-screen{ 
+     display: flex; 
+     width:50%; 
+     height:auto; 
+    } 
+    .container{ 
+     flex-direction: row; 
+     max-height: 350px; 
+    } 
+    .container-left, .container-right{ 
+     display: block; 
+     width:100%; 
+     height:auto; 
+    } 
+   }
